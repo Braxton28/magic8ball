@@ -20,16 +20,16 @@ const points = [
 "Yes",
 "Signs point to yes"
 ];
-document.getElementById("response").innerHTML=points;
+document.getElementById("answers").innerHTML=points;
 document.getElementById("center").innerHTML=points;
 
 function myFunction(){
     points.sort(function(a,b){return 0.5 - Math.random()});
-    document.getElementById("response").innerHTML=points[0];
+    document.getElementById("answers").innerHTML=points[0];
     setTimeout(timeup, 5000);
 
     function timeup(){
-        document.getElementById("response").innerHTML="8";
+        document.getElementById("answers").innerHTML="8";
         document.getElementById("clear").value="";
     }
 }
